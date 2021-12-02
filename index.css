@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-self: center;
-    background-image: url(./地方圖片/taiwan.svg);
+    background-image: url(./taiwan.svg);
     background-size: 80%;
     background-repeat: no-repeat;
     max-width: 1400px;
