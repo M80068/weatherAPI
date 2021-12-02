@@ -1,0 +1,298 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-image: url(./地方圖片/taiwan.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    max-width: 1400px;
+    background-color: rgb(206, 243, 243);
+}
+
+
+.container {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-left: 10%;
+}
+
+.card {
+    z-index: 0;
+    width: 250px;
+    height: 430px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    background: rgb(191, 245, 198);
+    clip-path: circle(70px at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card:hover {
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: 0.25s box-shadow;
+    border-radius: 10px;
+    clip-path: none;
+}
+
+.parts {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.part {
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    padding: 0px 20px;
+    margin: 200px 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background-color: rgb(191, 216, 245);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.part:first-child {
+    margin-bottom: 800px;
+}
+
+.part:nth-child(2) {
+    background-image: url(./地方圖片/中部.svg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 50PX;
+    font-family: cursive;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+h3 {
+    color: rgb(71, 86, 114);
+    font-size: 20px;
+    text-align: center;
+}
+
+h4 {
+    margin: 15px 0;
+    text-align: center;
+}
+
+span {
+    width: 30px;
+    height: 30px;
+}
+
+/* 北部地區 */
+.card:nth-child(6) {
+    order: 0;
+}
+
+.card:nth-child(2) {
+    order: 1;
+}
+
+.card:nth-child(19) {
+    order: 2;
+}
+
+.card:nth-child(8) {
+    order: 3;
+}
+
+.card:nth-child(14) {
+    order: 4;
+}
+
+.card:nth-child(5) {
+    order: 5;
+}
+
+.card:nth-child(4) {
+    order: 6;
+}
+
+/* 中部 */
+.card:nth-child(9) {
+    order: 7;
+}
+
+.card:nth-child(12) {
+    order: 8;
+}
+
+.card:nth-child(21) {
+    order: 9;
+}
+
+.card:nth-child(15) {
+    order: 10;
+}
+
+.card:nth-child(10) {
+    order: 11;
+}
+
+/* 南部 */
+.card:nth-child(1) {
+    order: 12;
+}
+
+.card:nth-child(3) {
+    order: 13;
+}
+
+.card:nth-child(7) {
+    order: 14;
+}
+
+.card:nth-child(16) {
+    order: 15;
+}
+
+.card:nth-child(18) {
+    order: 16;
+}
+
+/* 東部 */
+.card:nth-child(11) {
+    order: 17;
+}
+
+.card:nth-child(13) {
+    order: 18;
+}
+
+/* 離島 */
+.card:nth-child(17) {
+    order: 19;
+}
+
+.card:nth-child(20) {
+    order: 20;
+}
+
+.card:nth-child(22) {
+    order: 21;
+}
+
+
+
+/* 天氣 */
+
+:root {
+    --color_white: rgb(243, 243, 243);
+
+    --color_yellow: #FFD633;
+
+    --color_black: #333;
+
+    --color_blue_start: #19283D;
+
+    --color_blue_end: #1D678F;
+
+    --color_rain: #4DACFF;
+
+    --color_white_cloud: rgb(242, 249, 254);
+
+    --color_grey_cloud: #ccc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sunny {
+    width: 150px;
+    height: 150px;
+    fill: rgba(255, 214, 51, 1);
+    stroke: rgba(255, 214, 51, 0.5);
+    stroke-dasharray: 3px;
+    stroke-width: 15px;
+}
+
+#sun {
+    fill: rgba(255, 214, 51, 1);
+    stroke: rgba(255, 214, 51, 0.5);
+    stroke-dasharray: 3px;
+    stroke-width: 15px;
+}
+
+.cloudy_sunny {
+    width: 150px;
+    height: 150px;
+
+}
+
+.cloudy {
+    width: 150px;
+    height: 150px;
+}
+
+#cloud {
+    fill: rgb(242, 249, 254);
+}
+
+#cloud2 {
+    fill: rgb(225, 241, 252);
+}
+
+
+.overcast {
+    width: 150px;
+    height: 150px;
+}
+
+#overcast_cloud {
+    fill: rgb(209, 209, 209);
+}
+
+#overcast_cloud2 {
+    fill: rgb(150, 146, 146);
+}
+
+.rainy {
+    width: 150px;
+    height: 150px;
+}
+
+.rainy_thunder {
+    width: 150px;
+    height: 150px;
+}
+
+#rain {
+    fill: rgb(221, 234, 247);
+}
+
+#thunder {
+    fill: rgba(255, 214, 51, 1);
+    stroke: rgba(255, 214, 51, 1);
+    stroke-width: 1;
+
+}
